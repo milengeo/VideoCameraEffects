@@ -1,7 +1,7 @@
 # Video Camera Effects    
 Video Camera Effects app lets users to add cascading special effects on recorded videos. 
 
-#Features:
+# Features
 Video Camera effects app can help you in doing awesome video editing provided you know and use all its features:  
 - Easy to understand user interface  
 - There are provisions or adding emojis, stickers for adding special effect on recorded videos
