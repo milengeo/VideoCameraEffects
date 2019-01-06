@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/main_container_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        // * top bar
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/main_open_panel"
+                android:src="@drawable/menu_72"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#444444"
+                android:textStyle="bold"
+                android:text="@string/app_name"
+                />
+
+        </android.support.v7.widget.Toolbar>
+
+
+
+
+        // * main views
+
+        <RelativeLayout
+            android:id="@+id/main_container_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ListView
+                      android:id="@+id/main_film_view"
+                      android:layout_weight="1"
+                      android:layout_width="match_parent"
+                      android:layout_height="0dp"
+                      android:fadeScrollbars="false"
+                      android:paddingTop="4dp"
+                      android:paddingBottom="4dp"
+                />
+                <View
+                    style="@style/Divider3dp"
+                />
+                <TextView
+                    android:id="@+id/main_tevi_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="6dp"
+                    android:text="1111"
+                    android:textSize="@dimen/font_size_normal"
+                />
+            </LinearLayout>
+
+
+
+
+            // * floating buttons
+
+            <RelativeLayout
+                android:id="@+id/main_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <com.rustero.widgets.MyDragButton
+                    android:id="@+id/main_new_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/new_record_144"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="16dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <!-- panels-->
+
+    <LinearLayout
+        android:id="@+id/main_panel_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/main_panel_left"
+        android:layout_width="266dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="start"
+        android:translationX="-9999dp"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/myColorPrimaryDark"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/myColorPrimaryDark"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="#444444"
+                    android:text="rustero.com"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    />
+
+                <ImageButton
+                    android:id="@+id/main_close_panel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/close_b72"
+                    android:background="@null"
+                    />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <ListView
+            android:id="@+id/main_panel_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice"
+            android:dividerHeight="2dp"
+            android:fadeScrollbars="false"
+            android:background="#ffffff"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

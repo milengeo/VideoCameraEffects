@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="bitrate_list_labels" translatable="false">
+        <item>1000 kbps</item>
+        <item>2000 kbps</item>
+        <item>3000 kbps</item>
+        <item>4000 kbps</item>
+        <item>7000 kbps</item>
+        <item>10000 kbps</item>
+    </string-array>
+
+
+    <string-array name="bitrate_list_values" translatable="false">
+        <item>1000</item>
+        <item>2000</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>7000</item>
+        <item>10000</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- the app -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+        <item name="android:actionButtonStyle">@style/MyActionButtonStyle</item>
+        <item name="android:textColor">@color/myTextColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="colorPrimaryDark">@color/myColorPrimaryDark</item>
+        <item name="colorPrimary">@color/myColorPrimary</item>
+        <item name="colorButtonNormal">@color/myColorPrimary</item>
+        <item name="android:spinnerDropDownItemStyle">@style/MySpinnerDropDownStyle</item>
+        <item name="android:dialogTheme">@style/MyDialogStyle</item>
+        <item name="android:alertDialogTheme">@style/MyDialogStyle</item>
+    </style>
+
+
+
+    <style name="MyDialogStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorButtonNormal">@color/myColorPrimary</item>
+    </style>
+
+
+    <!-- Style to replace actionbar overflow icon. set item 'android:actionOverflowButtonStyle' in AppTheme -->
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_dots_72</item>
+        <item name="android:background">?android:attr/actionBarItemBackground</item>
+    </style>
+
+
+    <style name="MyActionButtonStyle" parent="AppTheme">
+        <item name="android:minWidth">20dip</item>
+    </style>
+
+
+    <style name="MySpinnerDropDownStyle" parent="android:style/Widget.DropDownItem.Spinner">
+        <item name="android:background">@drawable/spinner_selector</item>
+        <item name="android:checkMark">@null</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+
+    <!--colors-->
+
+
+    <color name="myTextColor">#000000</color>
+    <color name="myColorPrimary">#66CCCC</color>
+    <color name="myColorPrimaryDark">#009999</color>
+    <color name="section_color">#009999</color>
+    <color name="spinner_selection">#009999</color>
+    <color name="record_flow_text_color">#ffffbb44</color>
+    <color name="record_overlay_back_color">#44000000</color>
+
+
+
+    <!--dividers -->
+
+    <style name="Divider2dpCaption">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/section_color</item>
+    </style>
+
+    <style name="Divider1dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="Divider2dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="Divider3dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+    <style name="Divider4dp">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">4dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+
+    <!--dimens -->
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="font_size_normal">16sp</dimen>
+    <dimen name="font_size_large">24sp</dimen>
+    <dimen name="font_size_radio_normal">18sp</dimen>
+</resources>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/id_port_case"
+    >
+
+
+
+    <SurfaceView
+        android:id="@+id/id_port_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        >
+    </SurfaceView>
+
+
+    <RelativeLayout
+        android:id="@+id/record_layout_controls"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+
+        <!-- top floor-->
+        <RelativeLayout
+            android:id="@+id/record_top_floor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/record_overlay_back_color"
+            >
+            <TextView
+                android:id="@+id/record_tevi_file_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="4dp"
+                android:padding="2dp"
+                android:text="portrait"
+                android:textColor="@color/record_flow_text_color"
+                android:textSize="@dimen/m_record_flow_text_size"
+                />
+
+            <TextView
+                android:id="@+id/record_tevi_hori_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="4dp"
+                android:padding="2dp"
+                android:text=""
+                android:textColor="@color/record_flow_text_color"
+                android:textSize="@dimen/m_record_flow_text_size"
+                />
+
+            <TextView
+                android:id="@+id/record_tevi_reso_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:padding="2dp"
+                android:text=""
+                android:textColor="@color/record_flow_text_color"
+                android:textSize="@dimen/m_record_flow_text_size"
+                />
+
+        </RelativeLayout>
+
+
+
+        <ImageButton
+            android:id="@+id/record_open_effect_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/record_top_floor"
+            android:layout_margin="@dimen/m_record_large_button_margin"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:soundEffectsEnabled="false"
+            android:src="@drawable/effect_button_96"
+            />
+
+        <ImageButton
+            android:id="@+id/record_pubu_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/m_record_small_button_margin"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/camera_switch"
+            />
+
+        <ImageButton
+            android:id="@+id/record_open_theme_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_above="@+id/record_bottom_floor"
+            android:layout_margin="@dimen/m_record_large_button_margin"
+            android:src="@drawable/theme_button_96"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:soundEffectsEnabled="false"
+            />
+
+
+
+
+
+        <com.rustero.widgets.ToggleImageButton
+            android:id="@+id/record_btn_flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/record_top_floor"
+            android:layout_margin="@dimen/m_record_small_button_margin"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/flash"
+            android:checked="false"
+            android:soundEffectsEnabled="false"
+            />
+
+        <com.rustero.widgets.ToggleImageButton
+            android:id="@+id/record_btn_grid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_above="@+id/record_bottom_floor"
+            android:layout_margin="@dimen/m_record_small_button_margin"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/grid"
+            android:checked="false"
+            android:soundEffectsEnabled="false"
+            />
+
+
+        <ImageButton
+            android:id="@+id/record_pubu_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/record_start"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/m_record_large_button_margin"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:soundEffectsEnabled="false"
+         />
+        <ImageButton
+            android:id="@+id/record_pubu_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/record_stop"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:layout_margin="@dimen/m_record_large_button_margin"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:soundEffectsEnabled="false"
+        />
+
+
+
+        <ImageButton
+            android:id="@+id/record_pubu_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_above="@+id/record_bottom_floor"
+            android:layout_margin="@dimen/m_record_small_button_margin"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/eye_off"
+            android:soundEffectsEnabled="false"
+            />
+
+
+
+
+        <ProgressBar
+            android:id="@+id/record_loading_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:visibility="invisible"
+            />
+
+
+
+        <!-- bottom floor-->
+        <RelativeLayout
+            android:id="@+id/record_bottom_floor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/record_overlay_back_color"
+        >
+
+            <TextView
+                android:id="@+id/record_tevi_time_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="4dp"
+                android:padding="2dp"
+                android:text="00:00"
+                android:textColor="@color/record_flow_text_color"
+                android:textSize="@dimen/m_record_flow_text_size"
+                />
+
+            <TextView
+                android:id="@+id/record_tevi_zoom_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_margin="4dp"
+                android:padding="2dp"
+                android:text="1.0x"
+                android:textColor="@color/record_flow_text_color"
+                android:textSize="@dimen/m_record_flow_text_size"
+                />
+
+            <TextView
+                android:id="@+id/record_tevi_size_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="4dp"
+                android:padding="2dp"
+                android:text="0KB"
+                android:textColor="@color/record_flow_text_color"
+                android:textSize="@dimen/m_record_flow_text_size"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- panels-->
+
+    <LinearLayout
+        android:id="@+id/record_panel_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#aa000000"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/panel_effects"
+        android:layout_width="233dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:translationX="-9999dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/myColorPrimaryDark"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="#444444"
+                android:text="Effects"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                />
+
+            <ImageButton
+                android:id="@+id/record_close_effect_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/close_b72"
+                android:background="@null"
+                />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/effects_panel_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:choiceMode="none"
+            android:dividerHeight="2dp"
+            android:fadeScrollbars="false"
+            android:background="#ffffff"
+            android:soundEffectsEnabled="false"
+            />
+
+        <View style="@style/Divider1dp"
+              android:background="#cccccc"
+            />
+
+        <TextView
+            android:id="@+id/effects_panel_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_normal"
+            android:padding="8dp"
+            android:background="#eeeeee"
+            android:text="Selected: 0"
+            />
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/theme_panel"
+        android:layout_width="233dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:translationX="-9999dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/myColorPrimaryDark"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="#444444"
+                android:text="Themes"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                />
+
+            <ImageButton
+                android:id="@+id/record_close_theme_panel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/close_b72"
+                android:background="@null"
+                />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/theme_panel_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:choiceMode="none"
+            android:dividerHeight="2dp"
+            android:fadeScrollbars="false"
+            android:background="#ffffff"
+            android:soundEffectsEnabled="false"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
+
+

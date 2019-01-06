@@ -1,0 +1,58 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/filter_none"
+            android:title="None"
+            />
+        <item
+            android:id="@+id/filter_hor_mirror"
+            android:title="Horizontal Mirror"/>
+        <item
+            android:id="@+id/filter_ver_mirror"
+            android:title="Vertical Mirror"/>
+        <item
+            android:id="@+id/filter_swirl"
+            android:title="Swirl"/>
+        <item
+            android:id="@+id/filter_bulge"
+            android:title="Bulge"/>
+        <item
+            android:id="@+id/filter_pinch"
+            android:title="Pinch"/>
+
+
+        <item android:title="Posterize" />
+        <item android:title="Pixelation" />
+        <item
+            android:id="@+id/filter_invert_colors"
+            android:title="Invert colors"
+            />
+        <item
+            android:id="@+id/filter_glowing_edges"
+            android:title="Glowing edges"
+            />
+        <item
+            android:id="@+id/filter_chroma"
+            android:title="Chroma"
+            />
+        <item
+            android:id="@+id/filter_black_and_White"
+            android:title="Black&amp;White"
+            />
+        <item
+            android:id="@+id/filter_sepia"
+            android:title="Sepia"
+            />
+        <item
+            android:id="@+id/filter_sharpen"
+            android:title="Sharpen"
+            />
+        <item
+            android:id="@+id/filter_edge_detection"
+            android:title="Edge detection"
+            />
+        <item
+            android:id="@+id/filter_embossing"
+            android:title="Embossing"/>
+    </group>
+</menu>

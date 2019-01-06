@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="facebook_app_id" translatable="false">1155014991201687</string>
+
+    <dimen name="m_record_large_button_margin">6dp</dimen>
+    <dimen name="m_record_small_button_margin">14dp</dimen>
+
+    <dimen name="m_film_icon_size">96dp</dimen>
+    <dimen name="m_record_flow_text_size">20sp</dimen>
+    <dimen name="m_play_unit_width">96dp</dimen>
+
+</resources>

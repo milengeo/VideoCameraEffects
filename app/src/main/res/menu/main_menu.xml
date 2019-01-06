@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:support="http://schemas.android.com/apk/res-auto" >
+
+
+    <item android:id="@+id/main_meit_share"
+          android:title="@string/share"
+          support:showAsAction="ifRoom"
+          android:icon="@drawable/share_72"
+        />
+
+    <item android:id="@+id/main_meit_rename"
+          android:title="@string/rename"
+          support:showAsAction="ifRoom"
+          android:icon="@drawable/rename_72"
+        />
+
+    <item android:id="@+id/main_meit_delete"
+          android:title="@string/delete"
+          support:showAsAction="ifRoom"
+          android:icon="@drawable/delete_72"
+        />
+
+</menu>
